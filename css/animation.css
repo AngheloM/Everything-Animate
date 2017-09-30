@@ -7,10 +7,51 @@
 }
 
 #all {
-  -webkit-transform: rotate(20deg) skew(20deg, 10deg) translate(400px, -180px) scale(0.5, 0.5);
+  -webkit-transform:
+  rotate(20deg)
+  skew(20deg, 10deg) 
+  translate(400px, -180px)
+  scale(0.5, 0.5);
+  background-color: red;
 }
 
 #matrix {
+  -webkit-transform: matrix(0.707107, 0.707107, -0.707107, 0.707107, 150, 0);
+}
+#matrix:focus {
   
+}
+
+#pseudo {
+  background-color: red;
+  color: black;
+}
+
+#pseudo:hover {
+  transform: rotate(180deg);
+  background-color: white;
+  color: white;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(22.5deg);
+  }
+  50% {
+    transform: rotate(45deg);
+  }
+  75% {
+    transform: rotate(67.5deg);
+  }
+  100% {
+    transform: rotate(90deg);
+  }
+}
+
+#animate {
+  animation: rotate 2s infinite;
 }
 
